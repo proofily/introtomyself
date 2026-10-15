@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>i am shy dont look at me</title>
+<style>
+:root{--bg:#fff35c;--ink:#1a1a1a;--card:#ffffff;--pink:#ff4fa3;--blue:#2f6bff;--green:#22c55e;--purple:#8b3dff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a1b5e;--ink:#fff8d6;--card:#3b2a80}}
+:root[data-theme="dark"]{--bg:#2a1b5e;--ink:#fff8d6;--card:#3b2a80}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Comic Neue",cursive,sans-serif;font-size:18px;line-height:1.5;overflow-x:hidden;
+background-image:radial-gradient(var(--pink) 2px,transparent 2px);background-size:34px 34px}
+main{max-width:860px;margin:0 auto;padding:12px 16px 40px}
+.marquee{background:var(--purple);color:#fff;border:4px dashed var(--pink);overflow:hidden;white-space:nowrap;padding:6px 0;font-weight:bold}
+.marquee span{display:inline-block;padding-left:100%;animation:scroll 14s linear infinite}
+@keyframes scroll{to{transform:translateX(-100%)}}
+h1{font-size:clamp(2rem,8vw,3.6rem);text-align:center;margin:24px 0 4px;line-height:1.1;background:linear-gradient(90deg,red,orange,#e6c800,green,blue,purple,red);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:2px var(--ink);animation:wob 2.4s ease-in-out infinite}
+@keyframes wob{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg) scale(1.03)}}
+.sub{text-align:center;font-size:1.2rem;margin:0 0 20px}
+section{background:var(--card);border:5px solid var(--ink);border-radius:18px;padding:16px 20px;margin:22px 0;box-shadow:8px 8px 0 var(--pink)}
+section:nth-of-type(even){box-shadow:8px 8px 0 var(--blue);transform:rotate(.6deg)}
+section:nth-of-type(odd){transform:rotate(-.6deg)}
+h2{margin:0 0 8px;font-size:1.7rem}
+ul{padding-left:22px;margin:8px 0}
+li{margin:6px 0}
+.badge{display:inline-block;background:var(--green);color:#000;border:3px solid var(--ink);border-radius:999px;padding:0 12px;font-weight:bold;transform:rotate(-3deg);margin:2px}
+.memes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:12px}
+.meme{background:#111;border:4px solid var(--ink);border-radius:8px;overflow:hidden;text-align:center;color:#fff}
+.meme .cap{font-family:Impact,"Arial Black",sans-serif;text-transform:uppercase;font-size:1.25rem;letter-spacing:1px;text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000;padding:8px 10px;color:#fff}
+.meme .pic{font-size:4.6rem;padding:14px 0;line-height:1}
+.m1 .pic{background:linear-gradient(#ff9a3c,#c0392b)}
+.m2 .pic{background:linear-gradient(#5b6dff,#1b1f6b)}
+.m3 .pic{background:linear-gradient(#3dd68c,#0b5d3b)}
+.m4 .pic{background:linear-gradient(#ff7ac8,#7a1d6d)}
+.split{display:grid;grid-template-columns:1fr 1fr}
+.split div{padding:10px 4px;font-size:2.6rem}
+.split .l{background:#c0392b}.split .r{background:#1e9d57}
+.split small{display:block;font-family:Impact,"Arial Black",sans-serif;font-size:.95rem;text-transform:uppercase;color:#fff;margin-top:4px}
+.bar{background:#ddd;border:3px solid var(--ink);border-radius:999px;height:26px;margin:6px 0 14px;overflow:hidden}
+.bar i{display:block;height:100%;background:repeating-linear-gradient(45deg,var(--pink),var(--pink) 10px,var(--purple) 10px,var(--purple) 20px);color:#fff;font-style:normal;font-size:.85rem;line-height:20px;padding-left:10px;white-space:nowrap}
+button{font:inherit;font-weight:bold;font-size:1.2rem;background:red;color:#fff;border:5px solid var(--ink);border-radius:14px;padding:12px 22px;cursor:pointer;box-shadow:0 6px 0 #700}
+button:active{transform:translateY(5px);box-shadow:0 1px 0 #700}
+button:focus-visible{outline:4px solid var(--blue);outline-offset:3px}
+.socials{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:12px}
+.soc{display:block;text-align:center;text-decoration:none;color:#fff;font-weight:bold;font-size:1.25rem;border:5px solid var(--ink);border-radius:16px;padding:14px 10px;box-shadow:0 6px 0 var(--ink);transition:transform .15s}
+.soc:hover{transform:rotate(-4deg) scale(1.06)}
+.soc:active{transform:translateY(5px);box-shadow:0 1px 0 var(--ink)}
+.soc:focus-visible{outline:4px solid var(--blue);outline-offset:3px}
+.soc b{display:block;font-size:2.4rem;line-height:1.1}
+.soc small{display:block;font-weight:normal;font-size:.95rem;opacity:.95}
+.tw{background:#111}.yt{background:#e62117}.dc{background:#5865f2}
+.center{text-align:center}
+#scare{position:fixed;inset:0;background:#000;color:#fff;display:none;flex-direction:column;align-items:center;justify-content:center;z-index:99;font-size:clamp(5rem,30vw,14rem);animation:shake .06s infinite;text-align:center;cursor:pointer}
+#scare p{font-size:1.1rem;margin:0;padding:0 20px}
+#scare.on{display:flex}
+@keyframes shake{0%{transform:translate(8px,-6px)}25%{transform:translate(-9px,5px)}50%{transform:translate(6px,8px)}75%{transform:translate(-7px,-8px)}100%{transform:translate(9px,4px)}}
+footer{text-align:center;font-size:.95rem;margin-top:10px}
+.counter{display:inline-block;background:#000;color:#0f0;font-family:"Courier New",monospace;padding:2px 10px;border:3px inset #888;letter-spacing:3px}
+@media (prefers-reduced-motion:reduce){h1,.marquee span{animation:none}.marquee span{padding-left:0}#scare{animation:none}section{transform:none!important}}
+</style>
+</head>
+<body>
+<div class="marquee"><span>DO YOU WANNA BE A [[BIG SHOT]]??, WELL THIS IS YOUR [[Final Chance]] TO BE ONE. SPAMTON G. SPAMTON THATS MY FUCKING NAME I AM SECRET BOSS IN DELTARUNE GAME</div>
+<main>
+<h1>HELLOoooo i make shit</h1>
+<p class="sub">(and it works)</p>
+
+<section>
+<h2>who am I?</h2>
+<p>i am proofile: <b>"i mod make"</b></p>
+<p>i kinda make .hx and .lua code cuz i like</p>
+<span class="badge">i like roblox</span><span class="badge">go mango</span><span class="badge">smansung</span>
+</section>
+
+<section>
+<h2>what do ido</h2>
+<ul>
+<li><b>i make roblox/fnf mods, i love lua</b></li>
+<li><b>when i am bored i play gd</b></li>
+<li><b>uhhhh</b></li>
+<li><b>what can i put now...</b></li>
+</ul>
+</section>
+
+<section>
+<h2>my skill level</h2>
+writing code
+<div class="bar"><i style="width:80%">pretty good!</i></div>
+making menus too shity
+<div class="bar"><i style="width:200%">MAXIMUM</i></div>
+reading a thing
+<div class="bar"><i style="width:6%">lol</i></div>
+</section>
+
+<section>
+<h2>say hello pls</h2>
+<p>i dont bite i swear</p>
+<div class="socials">
+  <a class="soc tw" href="https://x.com/proo" target="_blank" rel="noopener"><b></b>Twitter / X<small>@profileusagi</small></a>
+  <a class="soc yt" href="https://www.youtube.com/@UsagiJJS" target="_blank" rel="noopener"><b></b>YouTube<small>@UsagiJJS</small></a>
+  <a class="soc dc" href="https://discord.gg/vNshpj4dPS" target="_blank" rel="noopener"><b></b>Discord<small>join the chaos</small></a>
+</div>
+</section>
+
+
+
+<footer>
+You are visitor number <span class="counter">000055</span><br>
+Best viewed in Comic Sans. Made with ❤️ me (proofile).
+</footer>
+</main>
+
+<div id="scare" role="dialog" aria-label="Fake jumpscare, click to close">😱<p>(it was a joke, click anywhere to close)</p></div>
+<script>
+var s=document.getElementById('scare');
+document.getElementById('btn').addEventListener('click',function(){s.classList.add('on')});
+s.addEventListener('click',function(){s.classList.remove('on')});
+</script>
+</body>
+</html>
